@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>1A2B3C</title>
+		<meta name="description" content="1a2b3c">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./app.css">
+	</head>
+	<body onload="init()">
+		<div>
+			<p class="title">1A2B3C<span class="version">v1.2.0</span></p>
+		</div>
+		<div class="game-box" id="inputs">
+			<!--<input class="game-input" x="0" y="0" max=9 min=0 value=0 type="number">-->
+		</div>
+		<div class="sample-box" id="samples">
+			<p class="intro">绿色背景：当前空格填入的数字正确<input class="game-input" x="0" y="0" max=9 min=0 value=0 type="number" current=1></p>
+			<p class="intro">蓝色边框：当前空格填入数字在列上有正确的空格<input class="game-input" x="0" y="0" max=9 min=0 value=0 type="number" current=0 others=1></p>
+			<p class="intro">红色边框：当前空格填入数字在行上有正确的空格<input class="game-input" x="0" y="0" max=9 min=0 value=0 type="number" current=0 others=2></p>
+			<p class="intro">紫色边框：当前空格填入数字在行和列上都有正确的空格<input class="game-input" x="0" y="0" max=9 min=0 value=0 type="number" current=1 others=3></p>
+		</div>
+		<div class="message-box">
+			<p>尝试次数：<span id="tried">0</span></p>
+			<p>消耗时间：<span id="time">0</span>秒</p>
+		</div>
+		<div class="button-box">
+			<a id="btn-check" class="button" href="#" onclick="check()">检查</a>
+			<a id="btn-renew" class="button" href="#" onclick="newGame()">新游戏</a>
+			<a id="btn-showans" class="button" href="#" onclick="showAnswer()">显示答案</a>
+		</div>
+		<div class="repository-box">
+			<p class="intro">本项目由<a href="https://github.com/nitu2003">Taskeren</a>开发，并开源至GitHub。灵感来源于1A2B，在电脑课上无聊了几次后，在Chrome的about:blank里设计出了雏形，然后在家里进行了一大波重写，就变成了现在呈现在您眼前的1A2B3C。</p>
+			<p class="intro">虽然本项目的JS部分感觉已经差不多完善了，但是如果依然有什么问题，请务必在<a href="https://github.com/nitu2003/1a2b3c/issues">问题追踪器</a>中提出！如果您是页面设计大佬，也欢迎为这个垃圾网页设计一个好看的外表w。</p>
+			<p class="intro">1A2B3C的JS里还隐藏了一些设置，您可以通过修改<span class="code">GameSettings</span>里的设置来调整游戏，例如格子数量等。如果您有什么玩法的建议，也欢迎在<a href="https://github.com/nitu2003/1a2b3c/issues">问题追踪器</a>中提出！</p>
+		</div>
+		<script src="./app.js" async defer></script>
+	</body>
+</html>

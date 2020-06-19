@@ -1,0 +1,116 @@
+
+.title {
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: 'Microsoft YaHei UI';
+    margin: 10px;
+    padding: 10px;
+}
+
+.version {
+    font-size: 12px;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: coral;
+}
+
+.game-box {
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid #66CCFF;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.sample-box {
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid #66FFCC;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.intro {
+    margin: 0;
+}
+
+.intro > input {
+    width: 20px;
+    height: 20px;
+}
+
+.message-box {
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid #CCFF66;
+    border-radius: 5px;
+}
+
+.message-box > p {
+    margin: 0;
+}
+
+.button-box {
+    margin: 10px;
+}
+
+.repository-box {
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid #FF66CC;
+    border-radius: 5px;
+}
+
+.code {
+    letter-spacing: -1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.game-input {
+    width: 20px;
+    height: 20px;
+    line-height: 30px;
+    margin: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #CCC;
+}
+
+/* 移除Input框的上下小箭头 */
+.game-input::-webkit-outer-spin-button,
+.game-input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.button {
+    background-color: #66CCFF;
+    padding: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.game-input[current="1"] {
+    background-color: greenyellow;
+}
+
+/*
+   表示行内或列内有该数字
+   1表示行 2表示列 3表示行列都有
+*/
+.game-input[others="1"] {
+    border-color: dodgerblue;
+}
+
+.game-input[others="2"] {
+    border-color: crimson;
+}
+
+.game-input[others="3"] {
+    border-color: blueviolet;
+}

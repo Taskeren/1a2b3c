@@ -263,7 +263,9 @@ function newGame() {
 	gameObject.timer = {
 		start: 0,
 		end: 0,
-		all: 0
+		all: 0,
+		allInterval: 0,
+		interval: 0
 	};
 
 	// 新游戏
